@@ -44,16 +44,12 @@ a{
     transition: all .4s ease-in-out;
 }
 /*////////////////////////////// INDEX/MAIN //////////////////////////////*/
-
 #body{
-    max-width: 100%; /*ANCHO MAXIMO DECLARADO*/
-    margin: 0 auto; /*CENTRADO DE CONTENIDO HORIZONTALMENTE*/
+    max-width: 100%; 
+    margin: 0 auto; 
 }
-/*CON ESTO HACEMOS QUE EL MAIN SIEPRE OCUPE EL MAXIMO DE PANTALLA Y ENVIE EL FOOTER HASTA ABAJO*/
-
-
 #main{
-    min-height: 100vh; /*MAIN OCUPANDO SIEMPRE 100% DEL VIEWPORT*/
+    min-height: 100vh; 
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,13 +72,11 @@ a{
 }
 .bannerPrincipal{
     display: flex;
-    width: 100%; /*ANCHO DEL ELEMENTO.*/
-    height: 100vh;/*ALTO DEL ELEMENTO.*/
+    width: 100%; 
+    height: 100vh;
     background-color: rgb(174, 232, 232);
-    justify-content: center;/*ALINEAMOS AL CENTRO HORIZONTALMENTE.*/
-    align-items: center;/*ALINEAMOS AL CENTRO VERTICALMENTE.*/
-                        /*vh= 100% DISPONIBLE DE ALTO DE LA VISTA EN PANTALLA.*/
-                        /*wh= 100% DISPINIBLE EL ANCHO DE LA VISTA EN PANTALLA.*/
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
     padding: 20px;}
@@ -94,21 +88,10 @@ a{
     background-color: white;
     margin: 5px;
     display: inline-block;
-            /*
-            1 Valor= TODOS SUS LADOS IGUALES.
-            2 Valores= Primero Top y luego Bottom Top/Bottom.
-            3 Valores= Primero al Top y Bottom y por ultimo a Left y Right Top Bottom Diferentes / Left y Right Iguales.
-            4 Valores= Especifico para cada lado.
-            */
 overflow: auto;
-padding: 10px; /*ES EL RELLENO INTERNO*/
-border: 1px solid black; /*3 VALORES= 
-                            Primero aplica al tamaño.
-                            Segundo al Tipo/Estilo de borde.
-                            Tercero al color.*/
+padding: 10px;
+border: 1px solid black; 
 } 
-
-
 .bannerDescripcion {
     display: grid;
     width: 100%;
@@ -122,17 +105,14 @@ border: 1px solid black; /*3 VALORES=
     grid-template-areas: 
     "bannerGrid1 bannerGrid2"
 }
-
 .bannerDescripcion h3{
     color: white;
     font-size: 35px;
     padding: 10px;
 }
-
 .bannerDescripcion a{
     color: white;
 }
-
 button{
     background-color: red;
     color: white;
@@ -142,19 +122,15 @@ button{
     border: none;
     cursor: pointer;
 }
-
 .bannerFlex1{
     color: white;
     display: block;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .bannerFlex1 h3{
     font-size: 22px;
 }
-
-
 .clientesPrincipales{
     display: flex;
     width: 100%;
@@ -164,10 +140,7 @@ button{
     align-items: center;
     gap: 10px;
 }
-
-
 /*////////////////////////////// FOOTER //////////////////////////////*/
-
 #footer {
 width: 100%;
 background-color: #0a141d;
@@ -186,7 +159,6 @@ padding: 10px 0px;
 }
 .footer article img {width: 250px;
 height: 100px;}
-
 .footerContacto h4{
     color: white;
     margin: 20px;
@@ -197,12 +169,10 @@ height: 100px;}
     color: white;
     font-size: 12px;
 }
-
 .footerContacto a{
     margin: 0 auto;
     padding: 30px;
 }
-
 .footerRedes a{
     display: inline-block;
     text-decoration: none;
@@ -213,20 +183,16 @@ height: 100px;}
     margin-right: 10px;
     background-color: #0d2033;
     text-align: center;
-
 }
-
 .footerContacto {
     flex-direction: column;
     overflow: auto;
 }
 .footerRedes img{width: 100%;
 height: 300px;}
-
 .footerRedes{
     text-align: center
 }
-
 /*TIPOGRAFIA DE EJEMPLO*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
@@ -248,14 +214,10 @@ ESTILOS DEL PAGE GRIDS
     "hijoGrid1 hijoGrid2 hijoGrid2 hijoGrid2" /*FILA #2*/
     ;
 }
-
 .boxGrid img{
     width: 100%;/*INDICAMOS EL TAMAÑO QUE QUEREMOS DE ANCHO*/
     height: 100%;/*INDICAMOS EL TAMAÑO QUE QUEREMOS DE ALTO*/
 }
-
-
-
 #grid3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -265,24 +227,19 @@ ESTILOS DEL PAGE GRIDS
     "hijoGrid1 hijoGrid2"
     "hijoGrid3 hijoGrid4"
 }
-
 .boxGridhijos img{
     width: 100%;
     height: 100%;
 }
-
 .hijoGrid1 {
     grid-area: hijoGrid1;
 }
-
 .hijoGrid2 {
     grid-area: hijoGrid2;
 }
-
 .hijoGrid3 {
     grid-area: hijoGrid3;
 }
-
 .hijoGrid4 {
     grid-area: hijoGrid4;
 }
@@ -298,11 +255,9 @@ ESTILOS DEL PAGE GRIDS
     "hijoGrid4";
     justify-content: center;
     }
-
     .clientesPrincipales{
-        display: flex;
+    display: flex;
     }
-
     #footer {
         flex-direction: column;
         gap: 20px;
